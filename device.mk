@@ -64,6 +64,11 @@ PRODUCT_COPY_FILES += \
     device/google/taimen/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
     device/google/taimen/thermal_info_config_evt.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config_evt.json
 
+# Fstab Hardware
+PRODUCT_COPY_FILES += \
+    device/google/taimen/fstab.hardware:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(PRODUCT_HARDWARE) \
+    device/google/taimen/fstab.hardware:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.$(PRODUCT_HARDWARE)
+
 # Shims
 PRODUCT_PACKAGES += \
     libgui_shim
