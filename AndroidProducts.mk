@@ -15,8 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_taimen.mk \
+    $(LOCAL_DIR)/lineage_taimen.mk \
     $(LOCAL_DIR)/aosp_taimen_hwasan.mk \
 
 COMMON_LUNCH_CHOICES := \
-    aosp_taimen-userdebug
+    lineage_taimen-userdebug \
+    lineage_taimen-user \
+    lineage_taimen-eng
