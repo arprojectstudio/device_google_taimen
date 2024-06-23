@@ -26,6 +26,9 @@ PRODUCT_SOONG_NAMESPACES += device/google/taimen
 DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay
 
 # Audio
+PRODUCT_PACKAGES += \
+    firmware_tas2557_cal.bin_symlink
+
 PRODUCT_COPY_FILES += \
     device/google/taimen/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     device/google/taimen/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml
