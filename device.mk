@@ -143,12 +143,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
-    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so \
-    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v33.so
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
 
 PRODUCT_PACKAGES += \
     libhidlbase-v32 \
-    libhidlbase-v32.vendor
+    libhidlbase-v32.vendor \
+    libutils-v33
 
 # DRM
 PRODUCT_PACKAGES += \
